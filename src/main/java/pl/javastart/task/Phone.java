@@ -1,6 +1,7 @@
 package pl.javastart.task;
 
 public interface Phone {
+
     void sendSms();
 
     void sendMms();
