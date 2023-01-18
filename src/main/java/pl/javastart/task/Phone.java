@@ -1,12 +1,33 @@
 package pl.javastart.task;
 
-public interface Phone {
+public class Phone {
+    PhoneContract contract;
 
-    void sendSms();
+    public Phone(PhoneContract contract) {
+        this.contract = contract;
+    }
 
-    void sendMms();
+    public PhoneContract getContract() {
+        return contract;
+    }
 
-    void call(int seconds);
+    public void setContract(PhoneContract contract) {
+        this.contract = contract;
+    }
 
-    void printAccountState();
+    public void sendSms() {
+        contract.sendSms();
+    }
+
+    public void sendMms() {
+        contract.sendMms();
+    }
+
+    public void call(int seconds) {
+        contract.call(seconds);
+    }
+
+    public void printAccountState() {
+        contract.printAccountState();
+    }
 }

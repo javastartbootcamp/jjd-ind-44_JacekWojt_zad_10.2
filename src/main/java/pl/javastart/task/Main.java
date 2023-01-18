@@ -3,28 +3,32 @@ package pl.javastart.task;
 public class Main {
 
     public static void main(String[] args) {
-        PhoneContract card = new CardContract(40.0, 0.5, 1.5, 2.0);
-        card.printAccountState();
-        card.call(60);
-        card.sendSms();
-        card.sendSms();
-        card.printAccountState();
+//        Phone card = new Phone(new CardContract(5.0, 0.5, 1.5, 2.0));
+//        card.printAccountState();
+//        card.call(60);
+//        card.sendSms();
+//        card.sendSms();
+//        card.sendMms();
+//        card.printAccountState();
+//
+//        Phone monthly = new Phone(new MonthlyContract(45));
+//        monthly.printAccountState();
+//        monthly.sendSms();
+//        monthly.sendSms();
+//        monthly.sendMms();
+//        monthly.call(360);
+//        monthly.printAccountState();
 
-        MonthlyContract monthly = new MonthlyContract(60);
-        monthly.sendSms();
-        monthly.sendSms();
-        monthly.sendMms();
-        monthly.call(380);
-        monthly.call(120);
-        monthly.printAccountState();
-
-        PhoneContract mix = new MixContract(2.0, 1.0, 1.5, 2.0, 2, 1, 120.0);
+        Phone mix = new Phone(new MixContract(2.0, 0.5, 1.0, 2.0, 2, 2, 180));
+        mix.printAccountState();
+        mix.call(120);
+        mix.call(60);
+        mix.printAccountState();
+        mix.call(30);
         mix.printAccountState();
         mix.call(60);
-        mix.call(30);
-        mix.call(30);
-        mix.call(30);
-        mix.call(30);
+        mix.printAccountState();
+        mix.call(60);
         mix.printAccountState();
     }
 }
