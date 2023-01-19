@@ -1,7 +1,7 @@
-package pl.javastart.task;
+package pl.javastart.task.phone;
 
 public class Phone {
-    PhoneContract contract;
+    private PhoneContract contract;
 
     public Phone(PhoneContract contract) {
         this.contract = contract;
